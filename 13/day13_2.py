@@ -57,5 +57,5 @@ for fold in folds:
 
 for y in range(len(paper)):
     for x in range(len(paper[y])):
-          print('#' if paper[y][x] > 0 else ' ', end='')
+          print('$' if paper[y][x] > 0 else ' ', end='')
     print()
