@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-import numpy as np
-
 source = "./input.txt"
 #source = "./test.txt"
 
@@ -34,18 +32,15 @@ steps = 10
 
 for step in range(steps):
     i = 0
-    j = i+1
 
     while (i < len(template)-1):
-        pair = template[i]+template[j]
+        pair = template[i]+template[i+1]
         if pair in insertions:
             c = insertions[pair]
             template.insert(i+1,c)
             i+=2
-            j+=2
         else:
             i+=1
-            j+=1
 
 h = dict.fromkeys(set(template),0)
 for c in template:
