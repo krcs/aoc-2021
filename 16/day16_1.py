@@ -1,11 +1,6 @@
 #!/usr/bin/python3
-import sys
-import numpy as np
-from collections import defaultdict
 
 source = "./input.txt"
-#source = "./sample7.txt"
-
 
 def read_data(file):
     with open(file,"r") as f:
